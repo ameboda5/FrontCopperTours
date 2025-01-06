@@ -1,0 +1,65 @@
+/* Estilo base para los enlaces del menú */
+ul li a {
+  position: relative; /* Necesario para el pseudo-elemento */
+  display: inline-block;
+  font-weight: bold;
+  color: #999999;
+  text-decoration: none;
+  padding: 5px 10px; /* Opcional: para mayor espacio entre enlaces */
+  transition: color 0.3s ease;
+}
+
+/* Cambia el color del texto al pasar el mouse */
+ul li a:hover {
+  color: #000000;
+}
+
+/* Efecto de línea dinámica */
+ul li a::after {
+  content: ""; /* Pseudo-elemento para la línea */
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Coloca la línea justo debajo del enlace */
+  width: 0%; /* Comienza con una línea oculta */
+  height: 2px; /* Grosor de la línea */
+  background-color: #000; /* Color de la línea */
+  transition: all 0.3s ease; /* Suaviza el movimiento de la línea */
+  transform-origin: left; /* Define el punto de inicio de la animación */
+}
+
+/* Al pasar el mouse, la línea se extiende hacia el ancho del enlace */
+ul li a:hover::after {
+  width: 100%; /* Se expande completamente */
+  transform: scaleX(1); /* Asegura que la línea se muestre completa */
+}
+
+/* Para un efecto de deslizamiento dinámico */
+ul li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; /* La línea cubre todo el ancho del enlace */
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.2); /* Línea secundaria más sutil */
+  transform: scaleX(0); /* Oculta la línea inicial */
+  transform-origin: right; /* Define el punto de inicio inverso */
+  transition: transform 0.3s ease; /* Transición suave */
+}
+
+ul li a:hover::before {
+  transform: scaleX(1); /* Despliega la línea secundaria */
+}
+
+
+:host {
+  display: block; /* Asegura que el navbar ocupe todo su espacio */
+  position: fixed; /* Fija el navbar en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 30; /* Asegura que esté por encima del contenido */
+  height: 150px; /* Define la altura del navbar */
+  background-color: white; /* Color de fondo */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para separarlo visualmente */
+}

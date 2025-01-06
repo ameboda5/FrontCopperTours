@@ -1,0 +1,8 @@
+
+main {
+  display: block;
+  min-height: 100vh; /* Asegura que el contenido llene toda la pantalla */
+  background-color: #f9f9f9; /* Opcional: un fondo para visualizar mejor */
+}
+
+

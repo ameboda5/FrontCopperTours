@@ -1,0 +1,30 @@
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  .image-content {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 40%);
+    -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 0%);
+  }
+
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* 100% de la altura de la pantalla */
+    width: 100vw; /* 100% del ancho de la pantalla */
+    background-color: #4B6F44; /* Color de fondo verde oscuro */
+    overflow: hidden; /* Evita scroll si no deseas que se desplace la página */
+  }
+
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }

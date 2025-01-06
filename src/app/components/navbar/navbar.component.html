@@ -1,0 +1,102 @@
+<div class="fixed top-0 z-30 w-full bg-white/90 shadow-lg shadow-black/[0.03] backdrop-blur-sm">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <!-- Top Bar (Info, Social Links, Login/Sign Up) -->
+    <div class="flex flex-wrap justify-between items-center text-gray-600 px-4 py-2 text-sm">
+      <div class="flex space-x-4 text-[14px] text-[#999999] font-poppins">
+        <span class="ml-[18px]">
+          <i class="pi pi-phone text-gray-500 text-sm"></i>
+          <span class="ml-[15px]">(+57) 3005249521</span>
+        </span>
+        <span>
+          <i class="pi pi-envelope text-gray-500 text-sm ml-[10px]"></i>
+          <span class="ml-[15px]">coppertours&#64;gmail.com</span>
+        </span>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="flex space-x-3">
+        <i class="pi pi-facebook"></i>
+        <i class="pi pi-instagram"></i>
+        <i class="pi pi-whatsapp"></i>
+      </div>
+
+      <!-- Login and Register Links -->
+      <div class="flex space-x-8">
+        <a routerLink="/Login" class="ml-[15px] flex items-center space-x-2 font-semibold text-gray-700 hover:text-gray-500 no-underline">
+          <i class="pi pi-unlock text-gray-500 text-sm"></i>
+          <span>Login</span>
+        </a>
+        <a routerLink="/Register" class="flex items-center space-x-2 font-semibold text-gray-700 hover:text-gray-500 no-underline">
+          <i class="pi pi-user text-gray-500 text-sm"></i>
+          <span>Sign Up</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Line Separator -->
+    <div class="border-b border-gray-300"></div>
+
+    <!-- Navigation Bar (Logo and Menu) -->
+    <div class="relative flex items-center justify-between gap-3 rounded-2xl py-3">
+      <!-- Branding / Logo -->
+      <div class="flex flex-1 items-center space-x-2 text-lg font-bold text-gray-800">
+        <img src="./../../../assets/images/logo/LogoOficalCopperTours.png" class="w-[85px] h-[85px]">
+        <span>CopperTours</span>
+      </div>
+
+      <!-- Navigation Links -->
+      <ul class="hidden lg:flex flex-1 items-center justify-end space-x-[50px]">
+        <li>
+          <a
+            routerLink="/"
+            routerLinkActive="border-b-2 border-black text-gray-800"
+            class="font-bold text-gray-400 hover:text-gray-800 no-underline"
+          >
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a
+            routerLink="About"
+            routerLinkActive="border-b-2 border-black text-gray-800"
+            class="font-bold text-gray-400 hover:text-gray-800 no-underline"
+          >
+            Nosotros
+          </a>
+        </li>
+        <li>
+          <a
+            routerLink="Services"
+            routerLinkActive="border-b-2 border-black text-gray-800"
+            class="font-bold text-gray-400 hover:text-gray-800 no-underline"
+          >
+            Servicios
+          </a>
+        </li>
+        <li>
+          <a
+            routerLink="Destinations"
+            routerLinkActive="border-b-2 border-black text-gray-800"
+            class="font-bold text-gray-400 hover:text-gray-800 no-underline"
+          >
+            Destinos
+          </a>
+        </li>
+        <li>
+          <a
+            routerLink="Blog"
+            routerLinkActive="border-b-2 border-black text-gray-800"
+            class="font-bold text-gray-400 hover:text-gray-800 no-underline"
+          >
+            Blog
+          </a>
+        </li>
+      </ul>
+
+      <!-- Mobile Menu Button -->
+      <button class="lg:hidden text-gray-800">
+        <i class="pi pi-bars"></i>
+      </button>
+    </div>
+  </div>
+</div>
