@@ -1,0 +1,54 @@
+   /* Contenedor del card */
+   .relative {
+    position: relative;
+    overflow: hidden; /* Asegura que el contenido no salga del contenedor */
+    border-radius: 0.5rem; /* Bordes redondeados */
+  }
+
+  /* Imagen */
+  .relative img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: inherit; /* Bordes coinciden con el contenedor */
+  }
+
+  /* Overlay */
+  .relative .absolute {
+    position: absolute;
+    inset: 0; /* Ocupa todo el contenedor */
+    background: rgba(0, 100, 0, 0.6); /* Fondo negro con opacidad */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem;
+    transform: translateY(100%); /* Oculto en el borde inferior de la imagen */
+    opacity: 0; /* Invisible inicialmente */
+    transition: transform 0.4s ease, opacity 0.4s ease; /* Transición suave */
+  }
+
+  /* Efecto hover */
+  .relative:hover .absolute {
+    transform: translateY(0); /* Muestra el overlay subiéndolo */
+    opacity: 1; /* Lo hace visible */
+  }
+
+  /* Ajuste general para las tarjetas */
+  .card-large {
+    width: 52%;
+    height: 20rem;
+  }
+
+  .card-medium {
+    width: 25%;
+    height: 20rem;
+  }
+
+  .card-small {
+    width: 20rem;
+    height: 20rem;
+  }
+
+

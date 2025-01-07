@@ -1,27 +1,86 @@
-<div class="grid grid-cols-4 gap-4">
-  <!-- Tarjeta grande -->
-  <div class="col-span-2 bg-blue-200 rounded-lg shadow-md">
-    <!-- Contenido de la tarjeta -->
-    Tarjeta Grande
+<div class="container mx-auto px-4">
+  <!-- Título principal -->
+  <div class="text-center my-8">
+    <h2 class="text-3xl font-bold">Destinos Populares</h2>
+    <a href="#" class="text-green-500 flex items-center justify-center mt-2 no-underline">
+      Mira todos los destinos
+      <i class="pi pi-arrow-right ml-2"></i>
+    </a>
   </div>
 
-  <!-- Tarjeta mediana -->
-  <div class="col-span-1 bg-blue-300 rounded-lg shadow-md">
-    <!-- Contenido de la tarjeta -->
-    Tarjeta Mediana
+  <!-- Contenedor de tarjetas -->
+  <div class="flex flex-wrap justify-center gap-7">
+    <!-- Card 1 -->
+    <div class="relative card-large">
+      <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600"
+           alt="Destino 1"
+           class="w-full h-full object-cover rounded-lg">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-60 text-white flex flex-col justify-center p-4 text-center">
+        <div class="mb-auto">
+          <h3 class="text-xl font-bold">Destino 1</h3>
+          <p class="text-sm">Información sobre este increíble destino turístico. Descubre playas, cultura y más.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="relative card-medium">
+      <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600"
+           alt="Destino 2"
+           class="w-full h-full object-cover rounded-lg">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-60 text-white flex flex-col justify-center p-4 text-center">
+        <div class="mb-auto">
+          <h3 class="text-xl font-bold">Destino 2</h3>
+          <p class="text-sm">Explora la belleza y magia de este lugar. Aventuras y paisajes inolvidables te esperan.</p>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- Relleno para igualar el diseño si es necesario -->
-  <div></div>
+  <!-- Segunda fila de tarjetas -->
+  <div class="flex flex-wrap justify-center gap-7 my-10">
+    <!-- Card 3 -->
+    <div class="relative card-small">
+      <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600"
+           alt="Destino 3"
+           class="w-full h-full object-cover rounded-lg">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-60 text-white flex flex-col justify-center p-4 text-center">
+        <div class="mb-auto">
+          <h3 class="text-xl font-bold">Destino 3</h3>
+          <p class="text-sm">Un lugar único lleno de experiencias que transformarán tu perspectiva de viajar.</p>
+        </div>
+      </div>
+    </div>
 
-  <!-- Segunda fila con 3 tarjetas iguales -->
-  <div class="col-span-1 bg-blue-400 rounded-lg shadow-md">
-    Tarjeta 1
-  </div>
-  <div class="col-span-1 bg-blue-400 rounded-lg shadow-md">
-    Tarjeta 2
-  </div>
-  <div class="col-span-1 bg-blue-400 rounded-lg shadow-md">
-    Tarjeta 3
+    <!-- Card 4 -->
+    <div class="relative card-small">
+      <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600"
+           alt="Destino 4"
+           class="w-full h-full object-cover rounded-lg">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-60 text-white flex flex-col justify-center p-4 text-center">
+        <div class="mb-auto">
+          <h3 class="text-xl font-bold">Destino 4</h3>
+          <p class="text-sm">Vive la aventura en este lugar asombroso lleno de paisajes impresionantes.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="relative card-small">
+      <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600"
+           alt="Destino 5"
+           class="w-full h-full object-cover rounded-lg">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black bg-opacity-60 text-white flex flex-col justify-center p-4 text-center">
+        <div class="mb-auto">
+          <h3 class="text-xl font-bold">Destino 5</h3>
+          <p class="text-sm">Descubre un paraíso escondido con paisajes de ensueño y una cultura fascinante.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
